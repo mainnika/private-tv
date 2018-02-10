@@ -9,6 +9,7 @@ import (
 	"github.com/lidouf/glib"
 	"github.com/lidouf/gst"
 	"github.com/mainnika/private-tv/backend"
+	"github.com/mainnika/private-tv/server"
 )
 
 func usage() {
@@ -34,6 +35,11 @@ func main() {
 	}
 
 	err, pipeline := backend.NewPipeline()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	err, _ = server.NewServer(9000)
 	if err != nil {
 		log.Fatal(err)
 	}

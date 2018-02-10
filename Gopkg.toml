@@ -4,3 +4,11 @@
 [[constraint]]
   branch = "master"
   name = "github.com/lidouf/gst"
+
+[[constraint]]
+  name = "google.golang.org/grpc"
+  version = "1.9.2"
+
+[[constraint]]
+  name = "github.com/golang/protobuf"
+  version = "1.0.0"
