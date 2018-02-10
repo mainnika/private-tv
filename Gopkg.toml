@@ -1,0 +1,6 @@
+# private-tv
+
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/lidouf/gst"
